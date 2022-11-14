@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useRef } from "react";
 import "./Header.css";
 import { AiOutlineShopping } from "react-icons/ai";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
+import { HiOutlineUserCircle } from "react-icons/hi";
+import { HiOutlineUserAdd } from "react-icons/hi";
 import {
   ProductContext,
   ProductDispath
@@ -53,6 +55,15 @@ function Header() {
               <span className="badge_mark">{state.favorites.length}</span>
             )}
           </Link>
+          <Link to={"/register"} className="shoppe_icon_box">
+            <HiOutlineUserAdd className="mark_icon"/>
+          </Link>
+          <Link to={"/login"} className="shoppe_icon_box">
+          
+          <HiOutlineUserCircle className="login_icon" />
+          </Link>
+          
+
         </div>
       </nav>
     </header>

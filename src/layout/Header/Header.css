@@ -14,8 +14,9 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 25px;
+  
 }
 
 .icon_Sopping_box {
@@ -27,7 +28,8 @@
 }
 
 .shoppe_icon_box,
-.mark_icon_box {
+.mark_icon_box,
+.login_icon_box {
   position: relative;
 }
 
@@ -36,6 +38,10 @@
 }
 
 .mark_icon_box:hover .mark_icon {
+  transform: translateY(-3px);
+}
+
+.login_icon_box:hover .login_icon {
   transform: translateY(-3px);
 }
 
@@ -48,6 +54,12 @@
 .mark_icon {
   color: #fff;
   font-size: 30px;
+  transition: all 0.3s;
+}
+
+.login_icon {
+  color: #fff;
+  font-size: 40px;
   transition: all 0.3s;
 }
 
