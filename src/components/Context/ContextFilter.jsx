@@ -6,14 +6,6 @@ const initialFilterState = {
   searchKey: ""
 };
 
-const filterItemsHandler = (key) => {
-  const filteredItems = allProducts.filter((product) => {
-    return product.category === key;
-  });
-
-  return { filteredItems };
-};
-
 const filterReduce = (state, action) => {
   switch (action.type) {
     case "SEARCH_KEYWORD":
@@ -25,22 +17,6 @@ const filterReduce = (state, action) => {
       state.filteredItems = [...allProducts];
       return {
         ...state
-      };
-    case "VEGETABLE":
-      return {
-        ...filterItemsHandler("سبزیجات")
-      };
-    case "FRUIT":
-      return {
-        ...filterItemsHandler("میوه جات")
-      };
-    case "NUTS":
-      return {
-        ...filterItemsHandler("خشکبار")
-      };
-    case "BEANS":
-      return {
-        ...filterItemsHandler("حبوبات")
       };
     default:
       return state;
