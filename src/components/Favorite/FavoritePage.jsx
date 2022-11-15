@@ -41,7 +41,7 @@ export default function FavoritePage() {
           <div className="favorite_empty">
             <img
               className="favorite_empty_img"
-              src="images/empty_favorite.svg"
+              src="images/empty-favorites.png"
               alt=""
             />
             <span className="favorite_empty_title">No tiene Favoritos aún</span>

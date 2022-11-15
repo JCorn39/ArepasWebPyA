@@ -27,7 +27,7 @@ export default function Products() {
           <div className="not_products">
             <img
               className="products_empty_img"
-              src="images/bare-tree.png"
+              src="images/NoResultados.png"
               alt=""
             />
             <span className="products_empty_title">

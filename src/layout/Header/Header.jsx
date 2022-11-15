@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef } from "react";
 import "./Header.css";
-import { AiOutlineShopping } from "react-icons/ai";
+import { HiShoppingCart } from "react-icons/hi";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { HiOutlineUserAdd } from "react-icons/hi";
@@ -41,7 +41,7 @@ function Header() {
         <div className="search_header">{pathname === "/" && <SearchBar />}</div>
         <div className="icon_Sopping_box">
           <Link to={"/basket"} className="shoppe_icon_box">
-            <AiOutlineShopping className="shop_icon" />
+            <HiShoppingCart className="shop_icon" />
             {state.basket.length > 0 && (
               <span className="badge_shope">{state.basket.length}</span>
             )}
