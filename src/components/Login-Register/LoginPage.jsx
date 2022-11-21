@@ -49,7 +49,7 @@ export default function Login  () {
    
         <form onSubmit={handleSubmit}    className='login-form'>
 
-            <h2 >BIENVENIDO A AREPAS CON TODO Y ALGO MÁS</h2>
+            <h2 className='LoginPage'>BIENVENIDO A AREPAS CON TODO Y ALGO MÁS</h2>
             <label  htmlFor='email'>Email</label>
             <input  id='email' ref={userRef} onChange={(e) => setUser(e.target.value)} value={user} required type='email' placeholder='arepa@gmail.com'></input>
             <label  htmlFor='password'>Contraseña</label>

@@ -1,4 +1,4 @@
-import ReactPaginate from "https://cdn.skypack.dev/react-paginate@7.1.3";
+//import ReactPaginate from "https://cdn.skypack.dev/react-paginate@7.1.3";
 import React, { useContext } from "react";
 import "./Basket.css";
 import { Link } from "react-router-dom";
@@ -50,13 +50,13 @@ export default function Basket() {
           </div>
         </div>
       ) : (
-        <div className="favorite_empty">
+        <div className="basket_empty">
           <img
-            className="favorite_empty_img"
+            className="basket_empty_img"
             src="images/empty-cart.png"
-            alt=""
+            alt="basketemptyimg"
           />
-          <span className="favorite_empty_title">El Carrito está vacío</span>
+          <span className="basket_empty_title">El Carrito está vacío</span>
         </div>
       )}
     </>

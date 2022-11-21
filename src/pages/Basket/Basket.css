@@ -57,6 +57,7 @@
 
 .basket_img img {
   width: 80px;
+  
 }
 
 .basket_content {
@@ -275,4 +276,25 @@
 
 .free_send_title span {
   font-size: 15px;
+}
+
+.basket_empty {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.basket_empty_title {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.basket_empty_img {
+  width: 250px;
 }

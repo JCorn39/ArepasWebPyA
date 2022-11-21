@@ -3,7 +3,6 @@ import "./Header.css";
 import { HiShoppingCart } from "react-icons/hi";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
 import { HiOutlineUserCircle } from "react-icons/hi";
-import { HiOutlineUserAdd } from "react-icons/hi";
 import {
   ProductContext,
   ProductDispath
@@ -54,9 +53,6 @@ function Header() {
             {state.favorites.length > 0 && (
               <span className="badge_mark">{state.favorites.length}</span>
             )}
-          </Link>
-          <Link to={"/register"} className="shoppe_icon_box">
-            <HiOutlineUserAdd className="mark_icon"/>
           </Link>
           <Link to={"/login"} className="shoppe_icon_box">
           

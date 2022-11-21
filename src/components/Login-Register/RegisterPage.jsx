@@ -1,5 +1,6 @@
 import React from 'react';
 import "./RegisterPage.css";
+import { HiArrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 export default function Register  () {
@@ -8,10 +9,20 @@ export default function Register  () {
  return(
     <>
     <div className='auth-from-container'>
+    <div className="register_container_linkBar">
+            <div className="register_linkBar">
+              <span>Ingresar</span>
+              <Link className="register_backLink" to={"/"}>
+              <HiArrowRight />
+                Volver a productos
+              </Link>
+            </div>
+            </div>
         <div >
+        
        
         <form className='register-form'>
-            <h2>BIENVENIDO A AREPA.COM</h2>
+            <h2 className='RegisterPage'>BIENVENIDO A AREPAS CON TODO Y ALGO MÁS</h2>
             <label>Nombre</label>
             <input type='name' placeholder='Luis'></input>
             <label>Apellido</label>
