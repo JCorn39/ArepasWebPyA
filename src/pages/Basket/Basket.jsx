@@ -1,3 +1,4 @@
+import ReactPaginate from "https://cdn.skypack.dev/react-paginate@7.1.3";
 import React, { useContext } from "react";
 import "./Basket.css";
 import { Link } from "react-router-dom";

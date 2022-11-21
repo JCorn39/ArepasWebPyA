@@ -1,5 +1,6 @@
 import React from 'react';
 import "./RegisterPage.css";
+import { Link } from "react-router-dom";
 
 export default function Register  () {
  //const
@@ -25,9 +26,9 @@ export default function Register  () {
             <input type='email' placeholder='arepa@gmail.com'></input>
             <label htmlFor='password'>Contraseña</label>
             <input type='password' placeholder='*******'></input>
-            <button className='buttonSubmit' type='submit'>Registrarse</button>
+            <button className='buttonSubmit' type='submit'><Link to={"/login"}>Registrarse</Link></button>
         </form>
-        <button className='buttonR'>¿Ya tienes una cuenta?.. Inicia sesion</button>
+        <button className='buttonR'> <Link to={"/login"}> ¿Ya tienes una cuenta?.. Inicia sesion </Link>  </button>
         </div>
     </div>
     </>
