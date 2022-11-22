@@ -38,8 +38,9 @@ export default function Register  () {
             <label htmlFor='password'>Contraseña</label>
             <input type='password' placeholder='*******'></input>
             <button className='buttonSubmit' type='submit'><Link to={"/login"}>Registrarse</Link></button>
+            <button className='buttonR'> <Link to={"/login"}> ¿Ya tienes una cuenta?.. Inicia sesion </Link>  </button>
         </form>
-        <button className='buttonR'> <Link to={"/login"}> ¿Ya tienes una cuenta?.. Inicia sesion </Link>  </button>
+        
         </div>
     </div>
     </>

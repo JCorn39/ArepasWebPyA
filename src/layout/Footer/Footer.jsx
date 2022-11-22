@@ -15,8 +15,11 @@ export default function Footer() {
       <div className="footer_first">
         <img src="images/PyA-Logo.png" alt="logo" />
         <div className="footer_btn_title_box">
-          <p>
-            aqui va texto
+        <p>
+            Disfruta junto a tu familia de las mejores Arepas</p>
+            <p> Tel: 318-265-6549</p>
+            <p> Dir:</p>
+            <p> Arepas con todo y algo más. P&A
           </p>
           
         </div>
@@ -24,7 +27,7 @@ export default function Footer() {
       <div className="footer_last">
         <span>Accesos Rapidos</span>
         <div className="footer_link_box">
-          <Link to={"/basket"}>Bolsa</Link>
+          <Link to={"/basket"}>Carrito</Link>
           <Link to={"/favorite"}>Favoritos</Link>
         </div>
       </div>

@@ -55,9 +55,10 @@ export default function Login  () {
             <label  htmlFor='password'>Contraseña</label>
             <input id='password' ref={userRef} onChange={(e) => setPwd(e.target.value)} value={pwd} required type='password' placeholder='*******'></input>
             <button className='buttonSubmit' type='submit'> <Link to={"/"}>Ingresar</Link></button>
+            <button className='buttonR'> <Link to={"/register"}>¿No tienes una cuenta?.. Registrate</Link></button>
         </form>
         
-        <button className='buttonR'> <Link to={"/register"}>¿No tienes una cuenta?.. Registrate</Link></button>
+        
       </div>
 
       )}

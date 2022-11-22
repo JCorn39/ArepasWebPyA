@@ -4,9 +4,9 @@
   min-height: 450px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto auto auto;
   gap: 10px;
-  row-gap: 20px;
+  row-gap: 40px;
   padding: 16px;
 }
 
@@ -165,7 +165,7 @@
 @media screen and (min-width: 500px) {
   .favorite_container,
   .product_container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto auto auto;
   }
 
   .basket_img img {
@@ -199,7 +199,7 @@
 @media screen and (min-width: 800px) {
   .favorite_container,
   .product_container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto auto auto;
   }
 
   .basket_container {
@@ -218,6 +218,6 @@
 @media screen and (min-width: 1000px) {
   .favorite_container,
   .product_container {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: auto auto auto;
   }
 }

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./Products.css";
 import Filter from "./Filter/Filter";
 import { FilterContext } from "../../components/Context/ContextFilter";
+//import ReactPaginate from "https://cdn.skypack.dev/react-paginate@7.1.3";
 import Card from "./Card/Card";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import Footer from "../../layout/Footer/Footer";
@@ -21,7 +22,7 @@ export default function Products() {
         </div>
       </div>
       <div className="product_container">
-        {productsList.length > 0 ? (
+        {productsList.length > 1 ? (
           productsList.map((product) => <Card key={product.id} {...product} />)
         ) : (
           <div className="not_products">

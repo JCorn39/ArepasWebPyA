@@ -1,4 +1,3 @@
-//import ReactPaginate from "https://cdn.skypack.dev/react-paginate@7.1.3";
 import React, { useContext } from "react";
 import "./Basket.css";
 import { Link } from "react-router-dom";
@@ -10,6 +9,7 @@ import BasketItem from "./BasketItem";
 export default function Basket() {
   const { state } = useContext(ProductContext);
   const { dispath } = useContext(ProductDispath);
+  
   return (
     <>
       <div className="favorite_container_linkBar">
@@ -40,7 +40,8 @@ export default function Basket() {
               <span>Valor Total a Pagar</span>
               <span>{state.totalPriceFainal.toLocaleString()} $ </span>
             </div>
-            <button className="basket_button_buy">Ir a pagar</button>
+            <button className="basket_button_buy"><Link to={"/facture"}>Ir a pagar</Link></button>
+            
             <button
               onClick={() => dispath({ type: "EMPTY_BASKET" })}
               className="basket_button_remove"

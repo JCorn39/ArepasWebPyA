@@ -1,17 +1,17 @@
-.RegisterPage {
+.FacturePage {
     text-align: center;
     align-items: center;
     justify-content: center;
     align-content: center;
   }
   
-  .auth-form-container, .login-form, .register-form {
+  .auth-form-container, .login-form, .facture-form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 70px 16px 0;
+    padding: 40px 16px 0;
   }
   
   @media screen and (min-width: 600px){
@@ -25,12 +25,18 @@
   
   
   label {
-    text-align: left;
+    text-align: center;
     padding: 0.25rem 0;
   }
   
+  span {
+    text-align: center;
+    padding: 0.25rem 0;
+  }
+
   input {
     margin: 0.5rem 0;
+    text-align: center;
     border-radius: 10px;
     padding: 1rem;
     border: none;
@@ -58,14 +64,14 @@
     justify-content: center;
     align-content: center;
   }
-  .register_container_linkBar {
+  .facture_container_linkBar {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 70px 16px 0;
   }
   
-  .register_linkBar {
+  .facture_linkBar {
     width: 100%;
     padding: 15px 16px;
     margin-top: 16px;
@@ -79,11 +85,11 @@
     border-right: 5px solid #8fc700;
   }
   
-  .register_linkBar span {
+  .facture_linkBar span {
     color: rgb(245, 40, 4);
   }
   
-  .register_backLink {
+  .facture_backLink {
     transition: all 0.3s ease;
     color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -91,7 +97,7 @@
     gap: 5px;
   }
   
-  .register_backLink:hover {
+  .facture_backLink:hover {
     color: #ff3939;
     padding-left: 5px;
   }

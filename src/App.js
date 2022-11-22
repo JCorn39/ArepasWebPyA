@@ -8,6 +8,7 @@ import Header from './layout/Header/Header';
 import Products from './pages/Products/Products';
 import Login from './components/Login-Register/LoginPage';
 import Register from './components/Login-Register/RegisterPage';
+import Facture from './components/Facture/FacturePage';
 
 
 
@@ -20,6 +21,8 @@ function App() {
     { path: '/register', element: <Register /> },
     { path: '/basket', element: <Basket /> },
     { path: '*', element: <Navigate to={'/'} /> },
+    { path: '/facture', element: <Facture /> },
+
   ])
   return (
     <ContextProvider>
